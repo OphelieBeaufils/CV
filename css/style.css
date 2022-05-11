@@ -1,8 +1,26 @@
 body{
     background-color: grey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* En-tête avec mes informations */
+header{
+    background-color: darkolivegreen;
+}
 .myphoto{
     border-radius: 50%;
-    wi
+    width: 10%;
+}
+.liens > a > img{
+    border-radius: 50%;
+    width: 50px;
+}
+.en_savoir_plus{
+    border: 1px solid goldenrod;
+    background-color: goldenrod;
+    border-radius: 50%;
+    padding: 4% 2%;
+    color: white;
+    font-weight: bold;
 }
