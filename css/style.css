@@ -2,6 +2,7 @@ body{
     background-color: grey;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 /* En-tête avec mes informations */
@@ -10,17 +11,52 @@ header{
 }
 .myphoto{
     border-radius: 50%;
-    width: 10%;
+    width: 20vh;
+    border: 1px solid white;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    font-weight: bold;
+
 }
 .liens > a > img{
     border-radius: 50%;
-    width: 50px;
+    width: 5vh;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    object-fit: cover;
 }
-.en_savoir_plus{
-    border: 1px solid goldenrod;
-    background-color: goldenrod;
-    border-radius: 50%;
-    padding: 4% 2%;
-    color: white;
+
+/* Corps de la page */
+main{
+    display: flex;
+    justify-content: space-around;
+}
+main > section {
+    background-color: white;
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    background-color: brown;
+    padding: 5px;
+}
+main > section > div{
+    color: black;
+}
+h3{
+    font-size: x-large;
     font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+strong{
+    font-weight: bold;
+}
+main > section > div > ul{
+    text-align: left;
+    list-style: disc;
+    padding: 25px;
 }
