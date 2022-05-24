@@ -20,7 +20,9 @@
                 <h4><em>au sein du <strong><?= $experience['employeur'] ?></strong></em></h4>
             </div>
             <p class="dates"><?= $experience['dates'] ?></p>
-            <?= $experience['missions_courtes'] ?>
+            <ul><?= $experience['mission1'] ?>
+                <?= $experience['mission2'] ?>
+                <?= $experience['mission3'] ?></ul>
             <p class="en_savoir"><a href="./experience.php?id=<?=$postes ?>">En savoir <span class="en_savoir__plus"> +</span></a> </p></br>
         </div>
         

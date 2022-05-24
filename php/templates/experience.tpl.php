@@ -13,7 +13,9 @@
                 <h4><em>au sein du <strong><?= $poste['employeur'] ?></strong></em></h4>
             </div>
             <p class="dates"><?= $poste['dates'] ?></p>
-            <?= $poste['missions'] ?>
+            <ul><?php for ($keyNumber=1; $keyNumber <= count($poste)-3; $keyNumber++) { 
+                    echo $poste['mission' . $keyNumber].'<br>';
+            }  ?></ul>
         </div>
         <p class="post__link__experience"><a href="../php/index.php" >Retour au CV</a></p>
     </section>
