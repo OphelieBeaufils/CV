@@ -1,5 +1,6 @@
 body{
-    background-color: #06153d;
+    background-image: url(../images/fon.webp);
+    background-size: cover;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -7,8 +8,6 @@ body{
 
 /* En-tête avec mes informations */
 header{
-    background-image: url(../images/90af6fac8fe7ba388ed4b87e6c050959.jpg);
-    object-fit: cover;
     margin: 5px 50px;
 }
 .myphoto{
@@ -20,7 +19,7 @@ h1{
     font-family: 'Indie Flower', cursive;
     font-size: 70px;
     font-weight: bold;
-    color:rgba(255, 255, 255, 0.8)
+    color:rgba(0, 0, 0, 0.8)
 
 }
 .liens > a > img{
@@ -31,18 +30,35 @@ h1{
     object-fit: cover;
 }
 
+
+/* FOOTER */
+footer{
+    color: rgb(0, 0, 0);
+    margin: 5px 50px;
+    font-size: small;
+}
+
+
+
+
 /* Corps de la page */
 main{
     display: flex;
     justify-content: space-around;
-    margin: 10px 50px;
-    background-color: black;
+    margin: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
-.section-pro {
-    background-color: white;
+.bloc, .bloc__experiences {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    border-radius: 1em;
+    margin-top: 5px;
 }
-main > section{
+main > section.section_index{
     width: 33%;
+    color: black;
+    padding: 5px;
 }
 h2{
     font-family: 'Indie Flower', cursive;
@@ -51,14 +67,11 @@ h2{
     padding-bottom: 15px;
     color: white;
 }
-main > section {
-    color: black;
-    padding: 5px;
-}
-.missions{
-    background-color: #0d966d;
+.experiences_professionnelles__missions{
+    background-color: rgba(60, 52, 177, 0.4);
     color: white;    
-    padding: 5px;
+    padding: 5px;    
+    border-radius: 1em 1em 0 0;
 }
 h3{
     font-size: large;
@@ -79,18 +92,66 @@ strong{
     margin: 0 60px;
 }
 
+
+
 /* Listes des tâches expériences professionnelles */
-.section-pro > ul{
+.bloc > ul, .bloc__experiences > ul{
     text-align: left;
     list-style: disc;
     padding: 5px 20px;
     font-size: small;
 }
-.section-pro > ul > li{
+.bloc > ul > li, .bloc__experiences > ul > li{
+    padding: 5px;
+    line-height: 15px;
+}
+
+
+/* Expérience Professionnelle */
+.experiences_professionnelles__experience {
+    background-color: white;
+}
+.experiences_professionnelles__experience > ul{
+    text-align: left;
+    list-style: disc;
+    padding: 5px 20px;
+    font-size: small;
+}
+.experiences_professionnelles__experience > ul > li{
     padding: 5px;
 }
-footer{
-    background-color: black;
+.post__link__experience{
+    background-color: rgb(69, 131, 212, 0.5);
+    width: 110px;
+    padding: 10px;
+    border-radius: 50px;
     color: white;
-    margin: 5px 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+/* Bouton "EN SAVOIR +" */
+.en_savoir{
+    background-color: rgb(69, 131, 212, 0.5);
+    position :relative;
+    width: 110px;
+    margin: auto;
+    padding: 10px 15px 10px 0;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.en_savoir__plus{
+    background-color: rgb(69, 131, 212);
+    position : absolute;
+    border-radius: 50%;
+    font-size: 35px;
+    right: -15px;
+    bottom: -3px;
+    padding: 2.5px 10px;
+    color: white;
+    font-weight: 900;
 }
