@@ -34,7 +34,7 @@ h1{
 /* FOOTER */
 footer{
     color: rgb(0, 0, 0);
-    margin: 5px 50px;
+    margin: 0 50px 20px;
     font-size: small;
 }
 
@@ -45,8 +45,9 @@ footer{
 main{
     display: flex;
     justify-content: space-around;
-    margin: 20px 50px;
+    margin: 30px 50px;
     background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
     border-radius: 10px;
 }
 .bloc, .bloc__experiences {
@@ -55,7 +56,7 @@ main{
     border-radius: 1em;
     margin-top: 5px;
 }
-main > section.section_index{
+main > .section_index{
     width: 33%;
     color: black;
     padding: 5px;
@@ -108,26 +109,27 @@ strong{
 
 
 /* Expérience Professionnelle */
-.experiences_professionnelles__experience {
+.bloc__experience {
     background-color: white;
 }
-.experiences_professionnelles__experience > ul{
+.bloc__experience > ul{
     text-align: left;
     list-style: disc;
     padding: 5px 20px;
     font-size: small;
 }
-.experiences_professionnelles__experience > ul > li{
+.bloc__experience > ul > li{
     padding: 5px;
 }
 .post__link__experience{
     background-color: rgb(69, 131, 212, 0.5);
-    width: 110px;
+    width: 150px;
     padding: 10px;
     border-radius: 50px;
     color: white;
     font-weight: bold;
     font-size: 15px;
+    margin: auto;
 }
 
 

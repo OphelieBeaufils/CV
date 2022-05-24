@@ -15,9 +15,8 @@
             <p class="dates"><?= $poste['dates'] ?></p>
             <?= $poste['missions'] ?>
         </div>
-        <a href="../php/index.php" class="post__link__experience">Back to home
-	    </a>
-        
+        <p class="post__link__experience"><a href="../php/index.php" >Retour au CV</a></p>
+    </section>
 
 </main>
 
